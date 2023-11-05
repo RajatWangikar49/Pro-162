@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <script src = "https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src = "https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+        <script src = "Throw.js"></script>
+
+    </head>
+
+    <body>
+
+        <a-scene id = "scene">
+
+            <a-assets>
+
+                <a-assets-item
+                id = "pins"
+                src = "Balling_Pins/scene.gltf"></a-assets-item>
+
+                <a-assets-item
+                id = "ball"
+                src = "Ball/scene.gltf"></a-assets-item>
+
+            </a-assets>
+
+            <a-entity 
+            id = "camera"
+            camera
+            position = "0 1.5 0"
+            wasd-controls
+            look-controls = "pointerLockEnabled : false">
+
+                <a-entity 
+                id = "ball1"
+                gltf-model = "#ball"
+                position = "0 -0.2 -1"
+                scale = "0.1 0.1 0.1"></a-entity>
+
+                <a-cursor> </a-cursor>
+
+            </a-entity>
+
+            <a-entity bowling-balls></a-entity>
+
+            <a-entity>
+
+                <a-plane
+                id = "ground"
+                position = "0 0 -20"
+                rotation = "-90 0 0"
+                height = "100"
+                width = "20"
+                color = "pink"
+                visible = "true"
+                static-body></a-plane>
+
+                <a-cylinder 
+                id = "ground"
+                position = "-10 0 -20"
+                height = "100"
+                color = "red"
+                rotation = "-90 0 0"
+                visible = "true"></a-cylinder>
+
+                <a-cylinder 
+                id = "ground"
+                position = "10 0 -20"
+                color = "red"
+                height = "100"
+                rotation = "-90 0 0"
+                visible = "true"></a-cylinder>
+
+                <a-box
+                id = "back-wall"
+                color = "#808080"
+                position = " 0 0 -20"
+                height = "20"
+                width = "20"></a-box>
+
+                <a-box
+                id = "right-wall"
+                color = "black"
+                position = "9 0 -17"
+                height = "25"
+                width = "3"></a-box>
+
+                <a-box
+                id = "left-wall"
+                color = "black"
+                position = "-9 0 -17"
+                height = "25"
+                width = "3"></a-box>
+
+                <a-box
+                id = "upper-wall"
+                color = "black"
+                position = "0 11 -17"
+                height = "5"
+                width = "25"></a-box>
+
+            </a-entity>
+
+            <a-entity position = "0 0 -10">
+
+                <a-entity
+                id = "pin1"
+                gltf-model = "#pins"
+                position = "0 0 1"
+                dynamic-body
+                scale = "0.05 0.05 0.05"></a-entity>
+
+                <a-entity
+                id = "pin2"
+                gltf-model = "#pins"
+                position = "1 0 -0.5"
+                dynamic-body
+                scale = "0.05 0.05 0.05"></a-entity>
+
+                <a-entity
+                id = "pin3"
+                gltf-model = "#pins"
+                position = "-1 0 -0.5"
+                dynamic-body
+                scale = "0.05 0.05 0.05"></a-entity>
+
+                <a-entity
+                id = "pin4"
+                gltf-model = "#pins"
+                position = "2 0 -1"
+                dynamic-body
+                scale = "0.05 0.05 0.05"></a-entity>
+
+                <a-entity
+                id = "pin5"
+                gltf-model = "#pins"
+                position = "-2 0 -1"
+                dynamic-body
+                scale = "0.05 0.05 0.05"></a-entity>
+                
+            </a-entity>
+
+        </a-scene>
+
+    </body>
+
+</html>

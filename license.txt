@@ -1,0 +1,11 @@
+Model Information:
+* title:	White Ball
+* source:	https://sketchfab.com/3d-models/white-ball-d01ef092bb7d4a678f84830551a0c89c
+* author:	Thunderstar0000 (https://sketchfab.com/Thunderstar0000)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "White Ball" (https://sketchfab.com/3d-models/white-ball-d01ef092bb7d4a678f84830551a0c89c) by Thunderstar0000 (https://sketchfab.com/Thunderstar0000) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
